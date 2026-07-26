@@ -313,13 +313,16 @@ class fineTunningFlux2Klein:
                 f"Epoch {i}/{self.epochs} Average Loss: {tot_loss/len(self.dataloader):.2f}"
             )
             self.loss_history.append(tot_loss/len(self.dataloader))
-            self._save_checkpoint(save_dir=f"{self.save_dir}/model", epoch=i)
+
+            if i%5==0:
+                self._save_checkpoint(save_dir=f"{self.save_dir}/model/{i}", epoch=i)
 
         plt.plot(self.loss_history)
         plt.savefig(f"{self.save_dir}/loss_history.png")
         plt.close()
 
     def _save_checkpoint(self, save_dir, epoch):
+        os.makedirs(save_dir, exist_ok=True)
         self.transformer.save_pretrained(f"{save_dir}/transformer")
         torch.save(
             {

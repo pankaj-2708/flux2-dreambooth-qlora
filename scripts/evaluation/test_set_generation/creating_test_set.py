@@ -9,16 +9,28 @@ import argparse
 import os
 
 mucha_prompts = [
+    # training prompts
+    {'prompt': 'Red-haired woman amid grapevines with bowl, alphonse mucha style'},
+    {'prompt': 'Two figures surrounded by white lilies, alphonse mucha style'},
+    {'prompt': 'Princess with blossom crown and star halo, alphonse mucha style'},
+    {'prompt': 'Hooded woman beside snow-covered branches, alphonse mucha style'},
+    {'prompt': 'Daydreaming nude framed by gothic arch, alphonse mucha style'},
+    {'prompt': 'Reader with floral backdrop and book, alphonse mucha style'},
+    {'prompt': 'Regal figure in gold robes with palm, alphonse mucha style'},
+    {'prompt': 'Smoky-haired woman against purple lettering, alphonse mucha style'},
+    {'prompt': 'Redhead in white gown before starry sky, alphonse mucha style'},
+    {'prompt': 'Woman toasting beneath ornate champagne emblem, alphonse mucha style'},
+    {'prompt': 'Slavic maiden with wreath, orb, and eagle, alphonse mucha style'},
+    {'prompt': 'Blonde figure weaving blossoms on flowering branches, alphonse mucha style'},
+    {'prompt': 'Redhead with poppy crown reclining among sunset vines, alphonse mucha style'},
+
+
+    # new prompts
     {"prompt": "Blonde woman weaving blossoms on flowering branches, alphonse mucha style"},
     {"prompt": "Serene raven-haired woman, moonlit lilies, swirling botanicals, alphonse mucha style"},
     {"prompt": "a puppy in a pond, alphonse mucha style"},
     {"prompt": "Ornate fox with a collar of autumn leaves and berries, amidst a tapestry of forest foliage, alphonse mucha style"},
-    {"prompt": "Hooded woman beside snow-covered branches, alphonse mucha style"},
-    {"prompt": "Daydreaming nude framed by gothic arch, alphonse mucha style"},
-    {"prompt": "Regal figure in gold robes holding a palm leaf, alphonse mucha style"},
-    {"prompt": "Smoky-haired woman against purple lettering, alphonse mucha style"},
     {"prompt": "Slavic maiden holding a wreath and golden orb, alphonse mucha style"},
-    {"prompt": "Woman toasting beneath ornate champagne emblem, alphonse mucha style"},
     {"prompt": "Ornate fox with a collar of autumn leaves, alphonse mucha style"},
     {"prompt": "Majestic lion with flowing stylized mane and mosaic background, alphonse mucha style"},
     {"prompt": "Golden retriever puppy sitting next to a lily pond, alphonse mucha style"},

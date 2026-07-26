@@ -13,11 +13,11 @@ pytorch_trainer=PyTorch(
     framework_version="2.8",
     py_version="py312",
     instance_count=1,
-    instance_type="ml.g4dn.2xlarge",
+    instance_type="ml.g5.xlarge",
     hyperparameters={
         "hf_token": os.environ["HF_TOKEN"],
         "cache_dir": "/opt/ml/processing/cache",
-        "epochs":20
+        "epochs":50
     },
     output_path="s3://pankaj-flux2klein/checkpoints/"
 )

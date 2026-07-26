@@ -29,7 +29,7 @@ hf_processor.run(
             destination="/opt/ml/processing/test_set",
         ),
         ProcessingInput(
-            source=f"s3://pankaj-flux2klein/checkpoints/pytorch-training-2026-07-24-03-12-47-998/output/model.tar.gz",
+            source=f"s3://pankaj-flux2klein/checkpoints/pytorch-training-2026-07-26-06-57-36-923/output/model.tar.gz",
             destination="/opt/ml/processing/model",
         )
 
