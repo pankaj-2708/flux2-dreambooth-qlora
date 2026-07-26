@@ -1,0 +1,6 @@
+diffusers>=0.39.0
+bitsandbytes
+accelerate
+datasets
+peft
+tqdm
